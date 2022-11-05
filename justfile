@@ -37,12 +37,14 @@ new PROJECT:
   m . /create 3.7 {{PROJECT}}; just optimize; \
   m . /create 3.8 {{PROJECT}}; just optimize; \
   m . /create 3.9 {{PROJECT}}; just optimize; \
+  m . /create 3.10 {{PROJECT}}; just optimize; \
 
 new-version PROJECT VERSION:
   set +e; \
   m . /create 3.7 {{PROJECT}} {{VERSION}}; just optimize; \
   m . /create 3.8 {{PROJECT}} {{VERSION}}; just optimize; \
   m . /create 3.9 {{PROJECT}} {{VERSION}}; just optimize; \
+  m . /create 3.10 {{PROJECT}} {{VERSION}}; just optimize; \
 
 meta:
   bash makes/meta/entrypoint.sh
